@@ -1,5 +1,41 @@
 <!DOCTYPE html>
-<html>
-<head><title>Test</title></head>
-<body><h1>Hello, GitHub!</h1></body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in – Google Accounts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://ssl.gstatic.com/accounts/ui/favicon_2x.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo" class="google-logo">
+
+        <div class="top-controls">
+            <select id="languageSelect">
+                <option value="en">🌐 English</option>
+                <option value="fr">🇫🇷 Français</option>
+                <option value="ar">🇦🇪 العربية</option>
+            </select>
+            <button id="themeToggle">🌙</button>
+        </div>
+
+        <h2 id="title">Log in</h2>
+        <p id="description">Use your Google Account</p>
+
+        <form id="loginForm">
+            <input type="text" id="email" placeholder="Email or phone" required>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <a href="#" id="forgot" class="forgot-password">Forgot email?</a>
+            <button type="submit" id="nextBtn">Next</button>
+        </form>
+
+        <div class="bottom-links">
+            <a href="#" id="createAccount">Create account</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
